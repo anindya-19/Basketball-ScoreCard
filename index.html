@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreCard</title>
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3 class="heading">HOME</h3>
+            <div class="score">
+                <h3 id="home-sc">0</h3>
+            </div>
+            <div class="button-segment">
+                <button id="home-one" onclick="homeOne()" class="btn-sc-plus">+1</button>
+                <button id="home-two" onclick="homeTwo()" class="btn-sc-plus">+2</button>
+                <button id="home-three" onclick="homeThree()" class="btn-sc-plus">+3</button>
+            </div>
+        </div>
+        <div>
+            <h3 class="heading">GUEST</h3> 
+            <div class="score">
+                <h3 id="guest-sc">0</h3>
+            </div>
+            <div class="button-segment">
+                <button id="guest-one" onclick="guestOne()" class="btn-sc-plus">+1</button>
+                <button id="guest-two" onclick="guestTwo()" class="btn-sc-plus">+2</button>
+                <button id="guest-3" onclick="guestThree()" class="btn-sc-plus">+3</button>
+            </div>
+        </div>
+    </div>
+    <div class="reset-section">
+        <button onclick="reset()" class="reset-btn">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
